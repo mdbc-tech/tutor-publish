@@ -8,7 +8,25 @@ templates = pkg_resources.resource_filename(
     "{{ cookiecutter.module_name }}", "templates"
 )
 
-config = {}
+
+config = {
+    "defaults": {
+        "TUTOR_PUBLISHER_MFE_APP": {
+            "name": "tutor_publisher",
+            "repository": "https://github.com/edx/frontend-app-publisher",
+            "port": 2001,
+            "env": {
+                "production": {
+                    "MY_CUSTOM_MFE_SETTING": "prod value"
+                },
+                "development": {
+                    "MY_CUSTOM_MFE_SETTING": "dev value"
+                }
+            }
+        }
+    }
+}
+
 
 hooks = {}
 

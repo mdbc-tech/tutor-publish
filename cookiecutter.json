@@ -1,8 +1,8 @@
 {
-  "plugin_name": "myplugin",
-  "package_name": "tutor-contrib-{{ cookiecutter.plugin_name }}",
+  "plugin_name": "tutor_publish",
+  "package_name": "tutor-contrib-publisher{{ cookiecutter.plugin_name }}",
   "module_name": "tutor{{ cookiecutter.plugin_name.lower().replace('-', '_') }}",
-  "git_repo": "https://github.com/myusername/{{cookiecutter.package_name }}",
-  "author": "John Doe",
+  "git_repo": "https://github.com/mdbc-tech/{{cookiecutter.package_name }}",
+  "author": "mbdc-tech",
   "license": "AGPLv3"
 }
