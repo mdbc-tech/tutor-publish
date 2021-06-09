@@ -1,7 +1,7 @@
 {
   "plugin_name": "tutor_publish",
   "package_name": "tutor-contrib-{{ cookiecutter.plugin_name }}",
-  "module_name": "tutor{{ cookiecutter.plugin_name.lower().replace('-', '_') }}",
+  "module_name": "{{ cookiecutter.plugin_name.lower().replace('-', '_') }}",
   "git_repo": "https://github.com/mdbc-tech/{{cookiecutter.package_name }}",
   "author": "mbdc-tech",
   "license": "AGPLv3"
